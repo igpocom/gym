@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="stylesheet" href="css/main.css"> -->
+  <title>TEST</title>
+  <style>
+
+  @import url('https://fonts.googleapis.com/css2?family=Albert+Sans:wght@100;200;300;400;500;600;700;800&display=swap');
+
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+
+  header {
+    display: flex;
+    width: 1300px;
+    margin: 20px auto 80px auto;
+    /* border: 1px solid black; */
+  }
+
+  .logotype {
+    width: 100px;
+    /* border: 1px solid green; */
+    padding: 5px 10px;
+  }
+
+  a img {
+    margin: 0;
+    padding: 0;
+  }
+
+  nav {
+    width: 1150px;
+    /* border: 1px solid black; */
+    text-align: center;
+  }
+    
+  ul {
+    margin: 0 auto; 
+    padding: 0; 
+    list-style: none; 
+    display: inline-block;
+    text-align: center;
+  }
+
+  li { 
+  display: table-cell; 
+  position: relative; 
+  padding:  15px 0;
+  /* border: 1px solid green; */
+  }
+
+  nav ul li a {
+  color: #1b1b1b;
+  text-transform: capitalize;
+  text-decoration: none;
+  /* letter-spacing: 0.15em; */
+  display: inline-block;
+  padding: 5px 10px;
+  position: relative;
+  /* border: 1px solid green; */
+  font-weight: 900;
+  opacity: 0.8;
+  font-family: 'Albert Sans';
+  margin: 0 40px;
+  }
+
+  nav ul li a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #ffa500;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+  }
+
+  nav ul li a:hover:after { 
+  width: 100%; 
+  left: 0;
+  }
+
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logotype"><a href="index.html"><img src="img/logo/igorfit2.png" alt="Igorfit PNG logo" height="36px"></a></div>
+    <nav><ul>
+      <li><a href="index.html" class="navigation">Inicio</a></li>
+      <li><a href="actividades.html" class="navigation">Actividades</a></li>
+      <li><a href="monitores.html" class="navigation">Monitores</a></li>
+      <li><a href="bonos-tarifas.html" class="navigation">Tarifas</a></li>
+      <li><a href="horarios.html" class="navigation">Horarios</a></li>
+      <li><a href="contacto.html" class="navigation">Contacto</a></li>
+    </ul></nav>
+  </header>
+
+
+</body>
+</html>
